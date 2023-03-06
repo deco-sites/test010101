@@ -13,6 +13,8 @@ import * as $$$0 from "./sections/GetStarted.tsx";
 import * as $$$1 from "./sections/Head.tsx";
 import * as $$$2 from "./sections/Markdown.tsx";
 import * as $$$3 from "./sections/QuillText.tsx";
+import * as $$$4 from "./sections/Test.tsx";
+import * as $$$5 from "./sections/Test2.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -28,6 +30,8 @@ const manifest: DecoManifest = {
     "./sections/Head.tsx": $$$1,
     "./sections/Markdown.tsx": $$$2,
     "./sections/QuillText.tsx": $$$3,
+    "./sections/Test.tsx": $$$4,
+    "./sections/Test2.tsx": $$$5,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -126,6 +130,38 @@ const manifest: DecoManifest = {
         },
         "required": [
           "html",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Test.tsx": {
+      "inputSchema": {
+        "title": " Test",
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "title": "Text",
+          },
+        },
+        "required": [
+          "text",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Test2.tsx": {
+      "inputSchema": {
+        "title": " Test2",
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "title": "Text",
+          },
+        },
+        "required": [
+          "text",
         ],
       },
       "outputSchema": null,
